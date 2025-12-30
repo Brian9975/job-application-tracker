@@ -1,0 +1,312 @@
+.nav-container {
+  position: fixed;
+  width: 20%;
+  background: #c1e6ba;
+  height: 100vh;
+}
+.nav-aside {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 25px 10px;
+  color: #000;
+  transition: 0.5s;
+}
+a:hover {
+  transform: scale(1.12);
+}
+.logOutBtn {
+  margin: 25px 10px;
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+  border: 0;
+  background: #023336;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logOutBtn:hover {
+  transform: scale(1.12);
+}
+
+.logo {
+  font-size: 30px;
+  text-align: right;
+  margin: 10px;
+  color: #023336;
+}
+
+/* Job Application container */
+.jobAppCont {
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.jobAppCard {
+  background: #023336;
+  margin: 15px 0;
+  color: #ffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.flexBtn {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin: 15px 0 15px;
+}
+.flex h3 {
+margin: 15px 0 15px;
+}
+.flex {
+  padding-bottom: 10px;
+  margin: 15px 0 15px;
+}
+.relative {
+  position: relative;
+}
+.span {
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  left: 50%;
+}
+.editJobBtn,
+.deleteJobBtn {
+  width: 65px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #c1e6ba;
+}
+
+/* Kanban Board Styling */
+.kanbanCont {
+  margin: 70px auto;
+  padding-bottom: 50px;
+}
+.kanbanContFlex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.kanbanCard {
+  background: #023336;
+  color: #fff;
+  width: 270px;
+  height: 120px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  overflow: auto;
+  padding: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.kanbanCard p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* Add Job Form */
+.addJobForm {
+  background: #c1e6ba;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.flexField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  max-height: 100%;
+}
+.flexField input {
+  max-width: 100%;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px 10px;
+  background: #023336;
+  color: #fff;
+  outline-color: #c1e6ba;
+}
+.addBtn {
+  margin: 10px;
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0;
+  background: #023336;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.addBtn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.addBtnFlex {
+  display: flex;
+  justify-content: center;
+}
+.selectStyle {
+  background: transparent;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+}
+
+.emptyJobState {
+  position: relative;
+  text-align: center;
+  margin: 90px auto;
+  font-size: 25px;
+  border: 5px dashed #023336;
+  width: 350px;
+  padding: 10px;
+  animation-name: updown;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+@keyframes updown {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+select {
+  margin: 10px 15px;
+}
+.addJobForm input {
+  margin: 10px 15px;
+  height: 40px;
+  font-size: 18px;
+  background: #023336;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.flex-center button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background: #023336;
+    color: #fff;
+    margin: 0 20px 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    animation-name: move;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-direction: normal;
+   animation-timing-function: ease-in-out;
+}
+.flex-center button:hover {
+    transform: translateY(-7px);
+    
+}
+/* @keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(7px);
+
+}
+} */
+
+ @media(max-width: 640px) {
+  .logo {
+    font-size: 16px;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+.nav-aside {
+  margin: 1px;
+}
+a {
+  
+  font-size: 15px;
+  padding: 15px 10px;
+}
+.logOutBtn {
+  margin: 15px 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.kanbanCont {
+  margin: 60px auto;
+  padding-bottom: 40px;
+}
+.kanbanContFlex {
+  display: flex;
+  flex-direction: column;
+}
+.kanbanCard {
+  width: 250px;
+  height: 140px;
+}
+.kanbanCard p {
+  font-size: 17px;
+}
+
+.jobAppCont {
+  margin: 50px auto;
+  width: 90%;
+}
+.jobAppCard {
+  background: #023336; 
+  padding: 20px;
+}
+.addJobForm {
+  width: 80%;
+}
+
+.addBtn {
+  width: 150px;
+  height: 45px;
+}
+.nav-container {
+  width: 25%;
+}
+
+ }

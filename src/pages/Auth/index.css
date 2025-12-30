@@ -1,0 +1,59 @@
+.loginSection {
+  height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.loginCard {
+    background: #c1e6ba;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    height: 250px;
+}
+.loginCard p {
+   font-size: 18px;
+   padding: 10px; 
+}
+.loginCard h3 {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.loginCard  div {
+    display: block;
+  padding: 0 0 10px;
+}
+.loginCard button {
+    border: 0;
+    color: #023336;
+    width: 290px;
+    height: 43px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+    cursor: pointer;
+}
+.loginCard button:hover {
+    transform: scale(1.1);
+}
+@media(max-width:640px) {
+    .loginCard {
+    height: 200px;
+}
+.loginCard p {
+   font-size: 16px;
+}
+.loginCard h3 {
+    font-size: 20px;
+}
+.loginCard button {
+    width: 200px;
+    height: 37px;
+    font-size: 18px;
+    margin: 15px auto;
+}
+} 
