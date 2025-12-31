@@ -309,4 +309,13 @@ a {
   width: 25%;
 }
 
+.emptyJobState {
+  margin: 70px auto;
+  font-size: 17px;
+  border: 3px dashed #023336;
+  width: 150px;
+  padding: 10px;
+ 
+}
+
  }
